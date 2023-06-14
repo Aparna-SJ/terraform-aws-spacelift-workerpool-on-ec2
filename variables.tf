@@ -114,6 +114,7 @@ variable "vpc_subnets" {
     "subnet-09eec3dbfc9dcb574",
     "subnet-0916370495811a2bf",
     "subnet-06ad35b8a4ae5e2d1",
+    ]
 }
 
 variable "worker_pool_id" {
