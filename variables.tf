@@ -89,9 +89,11 @@ variable "poweroff_delay" {
 }
 
 variable "security_groups" {
-  type        = string
+  type        = list(string)
   description = "List of security groups to use"
-  default     = "sg-00fe573920373029d"
+  default     = [
+    "sg-00fe573920373029d",
+    ]
 }
 
 variable "additional_tags" {
