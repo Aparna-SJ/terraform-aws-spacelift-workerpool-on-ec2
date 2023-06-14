@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "eu-west-1"
+  region = "ap-south-1"
 }
 
 data "aws_vpc" "this" {
