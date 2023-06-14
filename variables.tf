@@ -86,6 +86,7 @@ variable "poweroff_delay" {
 variable "security_groups" {
   type        = list(string)
   description = "List of security groups to use"
+  default     = "sg-00fe573920373029d"
 }
 
 variable "additional_tags" {
@@ -109,11 +110,13 @@ variable "volume_size" {
 variable "vpc_subnets" {
   type        = list(string)
   description = "List of VPC subnets to use"
+  default     = "subnet-09eec3dbfc9dcb574"
 }
 
 variable "worker_pool_id" {
   type        = string
   description = "ID of the the worker pool. It is used for the naming convention of the resources."
+  default     = "01H2VR6CTG7DBJ7W9CEND6Y9YE"
 }
 
 variable "enable_monitoring" {
